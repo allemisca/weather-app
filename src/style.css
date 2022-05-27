@@ -1,0 +1,44 @@
+h1,
+h2 {
+  font-size: 50px;
+  border: 2px solid aqua;
+  margin: 15px;
+}
+h2 {
+  text-align: right;
+}
+h3 {
+  margin: 15px;
+}
+p {
+  text-align: right;
+  margin: 0px 15px;
+}
+.text {
+  border: 2px solid aqua;
+  margin: 15px;
+  padding: 10px;
+}
+
+.city {
+  font-size: 20px;
+  margin: 15px;
+}
+.container {
+  object-fit: contain;
+  margin: 8%;
+  border: 1px solid grey;
+}
+.emojis {
+  font-size: 40px;
+  font-weight: bold;
+}
+.days {
+  font-size: 35px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.temperatures {
+  font-size: 30px;
+  font-weight: bold;
+}

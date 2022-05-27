@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <div class="city row">
+          <div class="col-8">
+            <input
+              type="text"
+              style="width: 100%"
+              placeholder="Please enter the city."
+              id="city-input"
+            />
+          </div>
+          <div class="col-2">
+            <input type="submit" value="Search" id="submit-button" />
+          </div>
+          <div class="col-2">
+            <button id="current-location">Current</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col-6">
+          <h1>Paris</h1>
+        </div>
+
+        <div class="col-6" id="degrees">
+          <h2>28°</h2>
+        </div>
+        <h3>Day</h3>
+      </div>
+
+      <div class="text">
+        <div class="row days">
+          <div class="col">M</div>
+          <div class="col">T</div>
+          <div class="col">W</div>
+          <div class="col">T</div>
+          <div class="col">F</div>
+          <div class="col">S</div>
+          <div class="col">S</div>
+        </div>
+        <br />
+        <div class="row emojis">
+          <div class="col">🌤</div>
+          <div class="col">🌥</div>
+          <div class="col">🌧</div>
+          <div class="col">☀️</div>
+          <div class="col">☀️</div>
+          <div class="col">🌥</div>
+          <div class="col">☀️</div>
+        </div>
+        <br />
+        <div class="row temperatures">
+          <div class="col">
+            <strong> 28° </strong>
+          </div>
+          <div class="col">25°</div>
+          <div class="col">19°</div>
+          <div class="col">22°</div>
+          <div class="col">24°</div>
+          <div class="col">27°</div>
+          <div class="col">25°</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
